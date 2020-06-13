@@ -1,0 +1,153 @@
+/* Colab Theme+ */
+/* benjavicente */
+
+/* https://www.jsdelivr.com/?docs=gh */
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff')  format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src:    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff2') format('woff2'),
+            url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff')  format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* ╒══════════════╕ */
+/* │    Themes    │ */
+/* ╘══════════════╛ */
+
+
+/* Dark Theme */
+html[theme=dark]{
+    --colab-primary-surface-color: #29292a;
+    --colab-secondary-surface-color: #444447;
+    --colab-primary-text-color: #fff;
+    --colab-toolbar-button-color:#aaa;
+    --colab-icon-color:#aaa;
+    --colab-border-color:#5f5f5f;
+    
+    --font-weight: 400;
+    --code-cell-background: #00010f;
+    --code-selected-active: #63b4ff38;
+    --code-selected-inactive: #c5e4fe24;
+    
+    --code-main: #f8f8f8;
+    --code-function: #e8e8a8;
+    --code-class: #55ddcb;
+    --code-string: #feb796;
+    --code-number: #a4d988;
+    --code-comment: #6ab056;
+    --code-punctuation: #e0e0e0;
+    --code-keywords-1: #c586c0;
+    --code-keywords-2: #76c1ff;
+    --code-bool: #4799dd;
+    --code-arguments: #9cdcfe;
+}
+
+
+/* Light Theme */
+html[theme=light]{
+
+    --colab-primary-surface-color: #e5e5e5;
+    --colab-secondary-surface-color: #cfcfcf;
+    --colab-primary-text-color: #000;
+    --colab-toolbar-button-color :#000;
+    --colab-icon-color: #000;
+    --colab-border-color: #999;
+    
+    --font-weight: 600;
+    --code-cell-background: #f9f9f9;
+    --code-selected-active: #63b4ff4a;
+    --code-selected-inactive: #63abef24;
+
+    --code-main: #000;
+    --code-function: #7d7d00;
+    --code-class: #267f99;
+    --code-string: #b03800;
+    --code-number: #009e65;
+    --code-comment: #008000;
+    --code-keywords-1: #b200df;
+    --code-keywords-2: #0000ff;
+    --code-arguments: #0053aa;
+}
+
+
+/* ╒═════════════╕ */
+/* │    SetUp    │ */
+/* ╘═════════════╛ */
+
+html[theme=dark] {
+    --mtk1:  var(--code-main);
+    --mtk4:  var(--code-arguments);
+    --mtk5:  var(--code-string);
+    --mtk6:  var(--code-number);
+    --mtk8:  var(--code-comment);
+    --mtk9:  var(--code-bool);
+    --mtk12: var(--code-punctuation);
+    --mtk14: var(--code-class);
+    --mtk15: var(--code-function);
+    --mtk18: var(--code-keywords-2);
+    --mtk19: var(--code-keywords-1);
+}
+
+html[theme=light] {
+    --mtk1:  var(--code-main);
+    --mtk6:  var(--code-keywords-2);
+    --mtk8:  var(--code-comment);
+    --mtk11: var(--code-number);
+    --mtk13: var(--code-class);
+    --mtk14: var(--code-function);
+    --mtk15: var(--code-arguments);
+    --mtk18: var(--code-keywords-1);
+    --mtk26: var(--code-string);
+}
+
+/* Font */
+.code, .monaco-editor .view-lines, .inputarea, .monaco-tokenized-source {
+    font-family: JetBrainsMono, monospace !important;
+    font-weight: var(--font-weight) !important;
+}
+
+/* Focus */
+.monaco-editor .focused .selected-text {background-color: var(--code-selected-active)}
+.view-overlays .selected-text {background-color: var(--code-selected-inactive)}
+
+/* Background */
+.codecell-input-output .margin-view-overlays, .monaco-editor-background
+{background: var(--code-cell-background)}
+
+/* Code classes */
+.monaco-editor .mtk0  {color: var(--mtk0 )}
+.monaco-editor .mtk1  {color: var(--mtk1 )}
+.monaco-editor .mtk2  {color: var(--mtk2 )}
+.monaco-editor .mtk3  {color: var(--mtk3 )}
+.monaco-editor .mtk4  {color: var(--mtk4 )}
+.monaco-editor .mtk5  {color: var(--mtk5 )}
+.monaco-editor .mtk6  {color: var(--mtk6 )}
+.monaco-editor .mtk7  {color: var(--mtk7 )}
+.monaco-editor .mtk8  {color: var(--mtk8 )}
+.monaco-editor .mtk9  {color: var(--mtk9 )}
+.monaco-editor .mtk10 {color: var(--mtk10)}
+.monaco-editor .mtk11 {color: var(--mtk11)}
+.monaco-editor .mtk12 {color: var(--mtk12)}
+.monaco-editor .mtk13 {color: var(--mtk13)}
+.monaco-editor .mtk14 {color: var(--mtk14)}
+.monaco-editor .mtk15 {color: var(--mtk15)}
+.monaco-editor .mtk16 {color: var(--mtk16)}
+.monaco-editor .mtk17 {color: var(--mtk17)}
+.monaco-editor .mtk18 {color: var(--mtk18)}
+.monaco-editor .mtk19 {color: var(--mtk19)}
+.monaco-editor .mtk20 {color: var(--mtk20)}
+.monaco-editor .mtk21 {color: var(--mtk21)}
+.monaco-editor .mtk22 {color: var(--mtk22)}
+.monaco-editor .mtk23 {color: var(--mtk23)}
+.monaco-editor .mtk24 {color: var(--mtk24)}
+.monaco-editor .mtk25 {color: var(--mtk25)}
+.monaco-editor .mtk26 {color: var(--mtk26)}
