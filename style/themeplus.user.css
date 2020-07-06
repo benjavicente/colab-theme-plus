@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Colab Theme +
 @namespace      github.com/benjavicente
-@version        1.0.1
+@version        1.0.2
 @description    Theme for Google Colab
 @author         benjavicente
 @homepageURL    https://github.com/benjavicente/colab-theme-plus
@@ -9,24 +9,27 @@
 @license        MIT
 ==/UserStyle== */
 
-/* https://www.jsdelivr.com/?docs=gh */
-@font-face{
-    font-family: 'JetBrainsMono';
-    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff')  format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'JetBrainsMono';
-    src:    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff2') format('woff2'),
-            url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff')  format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
 
 @-moz-document domain("colab.research.google.com") {
+
+    /* Import Fonts */
+    /* https://www.jsdelivr.com/?docs=gh */
+    @font-face{
+        font-family: 'JetBrainsMono';
+        src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff2') format('woff2'),
+             url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff')  format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'JetBrainsMono';
+        src:    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff2') format('woff2'),
+                url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff')  format('woff');
+        font-weight: 600;
+        font-style: normal;
+    }
+
     /* ╒══════════════╕ */
     /* │    Themes    │ */
     /* ╘══════════════╛ */
@@ -39,12 +42,12 @@
         --colab-toolbar-button-color:#aaa;
         --colab-icon-color:#aaa;
         --colab-border-color:#5f5f5f;
-        
+
         --font-weight: 400;
         --code-cell-background: #00010f;
         --code-selected-active: #63b4ff38;
         --code-selected-inactive: #c5e4fe24;
-        
+
         --code-main: #f8f8f8;
         --code-function: #e8e8a8;
         --code-class: #55ddcb;
@@ -57,23 +60,23 @@
         --code-bool: #4799dd;
         --code-arguments: #9cdcfe;
     }
-    
-    
+
+
     /* Light Theme */
     html[theme=light]{
-    
+
         --colab-primary-surface-color: #e5e5e5;
         --colab-secondary-surface-color: #cfcfcf;
         --colab-primary-text-color: #000;
         --colab-toolbar-button-color :#000;
         --colab-icon-color: #000;
         --colab-border-color: #999;
-        
+
         --font-weight: 600;
         --code-cell-background: #f9f9f9;
         --code-selected-active: #63b4ff4a;
         --code-selected-inactive: #63abef24;
-    
+
         --code-main: #000;
         --code-function: #7d7d00;
         --code-class: #267f99;
@@ -84,12 +87,11 @@
         --code-keywords-2: #0000ff;
         --code-arguments: #0053aa;
     }
-    
-    
+
     /* ╒═════════════╕ */
     /* │    SetUp    │ */
     /* ╘═════════════╛ */
-    
+
     html[theme=dark] {
         --mtk1:  var(--code-main);
         --mtk4:  var(--code-arguments);
@@ -103,7 +105,7 @@
         --mtk18: var(--code-keywords-2);
         --mtk19: var(--code-keywords-1);
     }
-    
+
     html[theme=light] {
         --mtk1:  var(--code-main);
         --mtk6:  var(--code-keywords-2);
@@ -115,13 +117,13 @@
         --mtk18: var(--code-keywords-1);
         --mtk26: var(--code-string);
     }
-    
+
     /* Font */
     .code, .monaco-editor .view-lines, .inputarea, .monaco-tokenized-source {
         font-family: JetBrainsMono, monospace !important;
         font-weight: var(--font-weight) !important;
     }
-    
+
     /* Focus */
     .monaco-editor
     .focused
@@ -129,12 +131,12 @@
 
     .view-overlays
     .selected-text {background-color: var(--code-selected-inactive)}
-    
+
     /* Background */
     .codecell-input-output
     .margin-view-overlays,
     .monaco-editor-background {background: var(--code-cell-background)}
-    
+
     /* Code classes */
     .monaco-editor .mtk0  {color: var(--mtk0 )}
     .monaco-editor .mtk1  {color: var(--mtk1 )}
