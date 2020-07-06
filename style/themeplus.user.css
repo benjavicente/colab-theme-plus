@@ -5,7 +5,7 @@
 @description    Theme for Google Colab
 @author         benjavicente
 @homepageURL    https://github.com/benjavicente/colab-theme-plus
-@updateURL      https://raw.githubusercontent.com/benjavicente/colab-theme-plus/master/style/themeplus.userstyle.css
+@updateURL      https://raw.githubusercontent.com/benjavicente/colab-theme-plus/master/style/themeplus.user.css
 @license        MIT
 ==/UserStyle== */
 
@@ -26,7 +26,7 @@
     font-style: normal;
 }
 
-@-moz-document domain("https://colab.research.google.com/") {
+@-moz-document domain("colab.research.google.com") {
     /* ╒══════════════╕ */
     /* │    Themes    │ */
     /* ╘══════════════╛ */

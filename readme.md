@@ -1,11 +1,12 @@
-# Google Colab Theme+
+# Colab Theme +
 
-A simple style that increases the contrast of the default dark and
-light theme and changes the monospace font to [JetBrainsMono][JBM].
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)](
+https://raw.githubusercontent.com/benjavicente/colab-theme-plus/master/style/themeplus.user.css
+)
 
-The theme can be installed by importing [`style.json`][json] to a
-style manager like [Stylus] or by coping [`themeplus.css`][css] to
-a new style.
+The theme can be installed with an style manager like [Stylus] by
+clicking [this link][userstyle] or by coping [`themeplus.css`][css]
+to a new style.
 
 ## Images
 
@@ -26,6 +27,6 @@ Light+
 ![default light](img/lightplus.png)
 
 [JBM]: https://github.com/JetBrains/JetBrainsMono
-[json]: https://cdn.jsdelivr.net/gh/benjavicente/colab-theme-plus/style.json
+[userstyle]: https://cdn.jsdelivr.net/gh/benjavicente/colab-theme-plus/style.json
 [stylus]: https://github.com/openstyles/stylus
 [css]: https://cdn.jsdelivr.net/gh/benjavicente/colab-theme-plus/style/themeplus.css
